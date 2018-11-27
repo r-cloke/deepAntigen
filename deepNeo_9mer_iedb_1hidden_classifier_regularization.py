@@ -212,6 +212,7 @@ def getXData():
         responseLst.append(response)
             
     X = np.array(pepLst) 
+    print(X.shape)
     X = X[:,0, :]
     
     Y =np.transpose(np.array(responseLst))
